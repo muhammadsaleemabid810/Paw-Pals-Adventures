@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Pals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff914d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            height: 300px;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .content {
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Paw Pals</h1>
+        <p>Your ultimate destination for all things pawsome!</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Love, Care, and Companionship</h1>
+        <p>Celebrating the bond between pets and their humans</p>
+    </section>
+
+    <div class="content">
+        <section id="about" class="card">
+            <h2>About Paw Pals</h2>
+            <p>Paw Pals is a community dedicated to pet lovers. We share stories, tips, and moments that highlight the joy our furry friends bring to our lives.</p>
+        </section>
+
+        <section id="gallery" class="card">
+            <h2>Gallery</h2>
+            <p>Check out adorable moments shared by our Paw Pals community.</p>
+            <div>
+                <img src="https://via.placeholder.com/150" alt="Pet Image 1" style="margin: 5px;">
+                <img src="https://via.placeholder.com/150" alt="Pet Image 2" style="margin: 5px;">
+                <img src="https://via.placeholder.com/150" alt="Pet Image 3" style="margin: 5px;">
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to share your story? Get in touch!</p>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit" style="background-color: #ff914d; color: white; padding: 10px 15px; border: none; border-radius: 5px;">Send</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Paw Pals. All rights reserved.</p>
+    </footer>
+</body>
+</html>
